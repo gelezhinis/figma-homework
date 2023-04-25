@@ -15,7 +15,12 @@ body:before {
 .choose h1,
 .world h1,
 .volunteer h1,
-.volunteer h5 {
+.volunteer h5,
+.events h1,
+.events h5,
+.events h6,
+.partners h1,
+.footer-content1 h5 {
   font-family: 'Lora';
   font-weight: bold;
 }
@@ -42,6 +47,20 @@ a.nav-link.fs-5.text-secondary:hover {
   color: #ff7000;
   border: 1px solid #ff7000;
 }
+.btn-custom2 {
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  /* left: 0px;
+  bottom: 0px; */
+}
+.btn-custom2:hover {
+  color: #fff;
+  border: 1px solid #fff
+}
 .navbar-collapse.collapse.show {
   background-color: #fff;
   padding: 11px;
@@ -56,15 +75,7 @@ a.nav-link.fs-5.text-secondary:hover {
 ul.navbar-nav.ms-auto {
   margin: 0 !important;
 }
-.hero h1 span,
-.welcome h1 span,
-.urgent h1 span,
-.urgent h5 span,
-.help h1 span,
-.help h5 span,
-.choose h1 span,
-.volunteer h1 span,
-.volunteer h5 {
+.text-primary-color {
   color: #ff7000;
 }
 .text-muted-color {
@@ -74,7 +85,11 @@ ul.navbar-nav.ms-auto {
   height: 3px;
   width: 100px;
   background-color: #ff7000;
-  /* margin: 0 auto; */
+}
+.line2 {
+  height: 1px;
+  width: 45px;
+  background-color: #ff7000;
 }
 .welcome i {
   font-size: 40px;
@@ -116,7 +131,6 @@ ul.navbar-nav.ms-auto {
   max-width: 320px;
 }
 .help p span {
-  color: #ff7000;
   font-weight: bold;
   font-family: 'Lora';
   font-size: 18px;
@@ -140,7 +154,6 @@ ul.navbar-nav.ms-auto {
 .accordion-button {
   background-color: #d6d6d6;
   box-shadow: none;
-  /* justify-content: flex-start; */
   padding-left: 50px;
 }
 .accordion-button.collapsed {
@@ -202,7 +215,6 @@ ul.navbar-nav.ms-auto {
   background-color: #fff;
 }
 .world i {
-  color: #ff7000;
   font-size: 40px;
 }
 .rectangle3 {
@@ -210,8 +222,93 @@ ul.navbar-nav.ms-auto {
   height: 200px;
   background-color: #333;
   border-radius: 0;
+  margin: 0 auto;
+}
+.small-text {
+  font-size: 12px;
+}
+.volunteer .card-subtitle {
+  font-size: 14px;
+}
+.rectangle4 {
+  max-width: 260px;
+  height: 332px;
+  background-color: #ff7000;
+  margin: 0 auto;
+}
+.bi-megaphone-fill {
+  font-size: 40px;
+}
+.events {
+  height: 640px;
+  background-color: #222;
+}
+.rectangle5 {
+  width: 400px;
+  height: 285px;
+  background-color: #333;
+}
+.big-text {
+  font-size: 42px;
+}
+.date-box {
+  min-width: 80px;
+  height: 80px;
+  background-color: #ff7000;
+}
+.dates h1 {
+  margin-top: 16px;
+  line-height: 32px;
+}
+.logos .logo {
+  margin: 0 auto;
+  max-width: 140px;
+}
+.logos .logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-content1 {
+  height: 80px;
+  background-color: #ff7000;
+}
+.footer-content1 h5 {
+  margin-bottom: 0;
+}
+.footer-content2 {
+  height: 320px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(34, 34, 34);
+}
+.footer-content2::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('./assets/img/path21630.png');
+  background-size: contain no-repeat;
+  background-position: center;
+  opacity: 0.1;
+}
+.footer-content2 .navbar-brand {
+  position: relative;
+}
+.footer-content3 {
+  height: 80px;
+  background-color: #333;
 }
 
+@media screen and (max-width: 991px) {
+  .choose {
+    height: 680px;
+  }
+  .footer-content2 {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 768px) {
   .donate {
     display: none;
@@ -219,9 +316,26 @@ ul.navbar-nav.ms-auto {
   .world {
     height: 440px;
   }
+  .footer-content1 h5 {
+    font-size: 14px;
+  }
 }
-@media screen and (max-width: 991px) {
-  .choose {
-    height: 680px;
+@media screen and (max-width: 575px) {
+  .footer-content2 {
+    height: 780px;
+  }
+}
+@media screen and (max-width: 519px) {
+  .btn-custom2 {
+    font-size: 12px;
+    padding: 5px 8px !important;
+  }
+  .footer-content3 p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .events {
+    height: 720px;
   }
 }
