@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body:before {
+  display: block;
+  content: '';
+  height: 85px;
+}
+.hero h1,
+.welcome h1,
+.welcome h5,
+.urgent h1,
+.urgent h5,
+.help h1,
+.help h5,
+.choose h1,
+.world h1,
+.volunteer h1,
+.volunteer h5 {
+  font-family: 'Lora';
+  font-weight: bold;
+}
+.header {
+  height: 85px;
+  font-family: 'Roboto', serif;
+  background-color: #fff;
+}
+a.nav-link.fs-5.text-secondary {
+  font-size: 16px !important;
+}
+a.nav-link.fs-5.text-secondary:hover {
+  color: #ff7000 !important;
+}
+
+.btn-custom {
+  background-color: #ff7000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+.btn-custom:hover {
+  color: #ff7000;
+  border: 1px solid #ff7000;
+}
+.navbar-collapse.collapse.show {
+  background-color: #fff;
+  padding: 11px;
+}
+.hero {
+  height: 500px;
+  background-color: #000;
+}
+.collapse.navbar-collapse {
+  justify-content: center;
+}
+ul.navbar-nav.ms-auto {
+  margin: 0 !important;
+}
+.hero h1 span,
+.welcome h1 span,
+.urgent h1 span,
+.urgent h5 span,
+.help h1 span,
+.help h5 span,
+.choose h1 span,
+.volunteer h1 span,
+.volunteer h5 {
+  color: #ff7000;
+}
+.text-muted-color {
+  color: #666666;
+}
+.line {
+  height: 3px;
+  width: 100px;
+  background-color: #ff7000;
+  /* margin: 0 auto; */
+}
+.welcome i {
+  font-size: 40px;
+}
+.card-img-top.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome .card-img-top {
+  height: 90px;
+  width: 90px;
+  background-color: #ff7000;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.icon-muted {
+  color: #999;
+}
+.urgent {
+  height: 550px;
+  background-color: #444;
+}
+.rectangle {
+  width: 370px;
+  height: 275px;
+  background-color: #333;
+}
+.progress-bar {
+  background-color: #ff7000;
+}
+.help .card-img-top {
+  height: 210px;
+  width: 100%;
+  background-color: #333;
+  margin: 0 auto;
+}
+.help .card {
+  max-width: 320px;
+}
+.help p span {
+  color: #ff7000;
+  font-weight: bold;
+  font-family: 'Lora';
+  font-size: 18px;
+}
+.bg-bar {
+  background-color: #999;
+}
+.choose {
+  height: 600px;
+  background-color: #f1f1f1;
+}
+.rectangle2 {
+  max-width: 420px;
+  height: 220px;
+  background-color: #333;
+}
+.choose .bi-youtube {
+  font-size: 40px;
+  color: #ff0000;
+}
+.accordion-button {
+  background-color: #d6d6d6;
+  box-shadow: none;
+  /* justify-content: flex-start; */
+  padding-left: 50px;
+}
+.accordion-button.collapsed {
+  box-shadow: none;
+}
+.accordion-button.collapsed::after {
+  height: 15px;
+  background-image: url('./assets/svg/file-plus.svg');
+  background-size: auto;
+  background-position: center;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  margin-left: 16px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #d6d6d6;
+  box-shadow: none;
+  display: flex;
+  justify-content: start;
+}
+.accordion-button:not(.collapsed)::after {
+  height: 15px;
+  background-image: url('./assets/svg/file-minus.svg');
+  transform: rotate(180deg);
+  background-size: auto;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  margin-left: 16px;
+}
+.choose button {
+  font-family: 'Lora';
+  font-weight: bold;
+}
+.world {
+  height: 260px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(34, 34, 34);
+}
+.world::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('./assets/img/path21630.png');
+  background-size: contain no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+.world .circle {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.world i {
+  color: #ff7000;
+  font-size: 40px;
+}
+.rectangle3 {
+  max-width: 260px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .donate {
+    display: none;
+  }
+  .world {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .choose {
+    height: 680px;
+  }
+}
