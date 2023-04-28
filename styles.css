@@ -114,8 +114,8 @@ ul.navbar-nav.ms-auto {
   background-color: #444;
 }
 .rectangle {
-  width: 370px;
-  height: 275px;
+  width: 100%;
+  height: 300px;
   background-color: #333;
 }
 .progress-bar {
@@ -143,8 +143,9 @@ ul.navbar-nav.ms-auto {
   background-color: #f1f1f1;
 }
 .rectangle2 {
-  max-width: 420px;
-  height: 220px;
+  width: 100%;
+  max-width: 600px;
+  height: 240px;
   background-color: #333;
 }
 .choose .bi-youtube {
@@ -244,7 +245,7 @@ ul.navbar-nav.ms-auto {
   background-color: #222;
 }
 .rectangle5 {
-  width: 400px;
+  max-width: 500px;
   height: 285px;
   background-color: #333;
 }
